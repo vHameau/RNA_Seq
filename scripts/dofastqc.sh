@@ -11,9 +11,10 @@
 #SBATCH --error=/data/users/vhameau/RNA_Seq/logs/error/%x_%j.err
 
 BASE="/data/users/${USER}/RNA_Seq"
+container="/containers/apptainer/fastqc-0.12.1.sif"
 
 cd ${BASE}/samples/reads_Blood/
 
 apptainer exec \
-    ${BASE}/resources/fastqc-0.12.1.sif \
+    ${container} \
     fastqc -o ${BASE}/results/fastqc_res *.fastq.gz
