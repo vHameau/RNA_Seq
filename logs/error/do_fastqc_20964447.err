@@ -1,0 +1,3 @@
+FATAL:   "for": executable file not found in $PATH
+/var/spool/slurmd/job20964447/slurm_script: line 20: syntax error near unexpected token `do'
+/var/spool/slurmd/job20964447/slurm_script: line 20: `    do fastqc -o ${BASE}/results/fastqc_res i;'
