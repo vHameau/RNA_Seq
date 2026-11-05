@@ -7,6 +7,7 @@
 #SBATCH --job-name=do_fastqc
 #SBATCH --mail-user=victor.hameau@students.unibe.ch
 #SBATCH --mail-type=begin,end
+#SBATCH --account=class-467713-ws-2026
 #SBATCH --output=/data/users/vhameau/RNA_Seq/logs/output/%x_%j.out
 #SBATCH --error=/data/users/vhameau/RNA_Seq/logs/error/%x_%j.err
 
